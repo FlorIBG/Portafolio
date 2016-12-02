@@ -246,7 +246,7 @@ celuar y pantalla de computadora*/
 	}
 	figcaption p {
     	padding: 0px 7px;
-    	font-size: 12px;
+    	font-size: 10px;
 	}
 	#textoContacto {
     	padding: 0% 0%;
@@ -283,6 +283,10 @@ celuar y pantalla de computadora*/
 	}
 	#textoContacto {
     	padding: 0% 14%;
+	}
+	figcaption p {
+    	padding: 0px 7px;
+    	font-size: 10px;
 	}
 }
 @media screen and (max-width: 991px) {
