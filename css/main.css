@@ -1,0 +1,311 @@
+
+/* Color de letras */
+.pink {
+	color: #CF6766;
+}
+.white {
+	color: white;
+}
+.blue {
+	color: #34495e;
+}
+/* Tamño de las letras del header */
+.hola {
+	font-size: 500%;
+}
+.introduccion {
+	font-size: 300%;
+	line-height: 150%;
+}
+/* Margin */
+.mg-8 {
+	margin: 8% 0%;	
+}
+.mg-4 {
+	margin: 4% 0%;
+}
+.mb-8 {
+	margin-bottom: 8%;
+}
+ul {
+	list-style: none;
+}
+#textoContacto {
+	padding: 0% 30%;
+}
+.rotating-item {
+	position: absolute;
+	margin-top: 32%;
+	}
+.listaHabilidades {
+	line-height: 300%;
+}
+.btn.focus, .btn:focus, .btn:hover {
+	color: #8EAEBD !important;
+}
+body {
+  padding-top: 4%;
+  font-family: 'Poppins','Open Sans','Josefin Sans';
+}
+.navbar-default {
+	background-color: #30415D !important;
+	border-color: #30415D !important;
+}
+.backgroundPink {
+	background-color: #CF6766;
+}
+.backgroundAzul {
+	background-color: #30415D;
+}
+
+#ancho {
+	width: 30%;
+}
+#textoPresentacion {
+	padding: 4% 26%;
+    line-height: 200%;
+}
+
+.parpadea {
+ color: #8EAEBD;
+  animation-name: parpadeo;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-name:parpadeo;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes parpadeo{  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes parpadeo {  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+   100% { opacity: 1.0; }
+}
+
+@keyframes parpadeo {  
+  0% { opacity: 1.0; }
+   50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+/* Proyectos */
+			
+.proyectos {
+	width: 100%;
+}
+
+figure {
+	width: 100%;
+	margin-top: 20% ;
+	margin-left: .5% ;
+	padding: 0;
+	height: 300px;
+	position: relative;
+	display: inline-block ;
+	cursor: pointer;
+	overflow: hidden;
+	border: 1px solid #CF6766;
+}
+
+figure:hover figcaption {
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+	filter: alpha(opacity=100);
+	opacity: 1;
+	top: 0;
+}
+
+figcaption {
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+	filter: alpha(opacity=0);
+	opacity: 0;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: rgba(0,0,0,.8);
+	color: #fff;
+	-webkit-transition: all .9s ease;
+	-moz-transition: all .9s ease;
+	-o-transition: all .9s ease;
+	-ms-transition: all .9s ease;
+	transition: all .9s ease;
+	-webkit-transition-delay: .5s;
+	-moz-transition-delay: .5s;
+	-o-transition-delay: .5s;
+	-ms-transition-delay: .5s;
+	transition-delay: .2s;
+}
+
+figure img {
+	-webkit-transition: all 1.5s;
+	-moz-transition: all 1.5s;
+	-o-transition: all 1.5s;
+	-ms-transition: all 1.5s;
+	transition: all 1.5s;
+	-webkit-transition-delay: .5s;
+	-moz-transition-delay: .5s;
+	-o-transition-delay: .5s;
+	-ms-transition-delay: .5s;
+	transition-delay: .5s;
+}
+
+figure:hover img {
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+figcaption h3 {
+	width: 100%;
+    text-align: center ;
+    font-weight: 400;
+    color: #CF6766 ;
+    line-height: 40px ;
+    margin-bottom: 0;
+    position: relative ;
+    top: 4% ;
+    font-size: 30px ;
+}
+figcaption p {
+    padding: 10px 20px ;
+    top: 8% ;
+    position: relative ;
+    font-size: 13px ;
+    width: 100% ;
+    color: white ;
+    line-height: 200%;
+}
+
+figure:hover h3,figure:hover p {
+	left: 0 ;
+}
+
+figcaption a {
+	color: #fff ;
+	border: 2px solid white ;
+	padding: 4px 10px ;
+	text-decoration: none ;
+}
+
+figcaption a:hover {
+	color: #4f5856 ;
+	background: #fff ;
+}
+
+	/*** Inserta tu codigo aqui ***/
+								/*** GENERAL ***/
+
+								/*** Responsive ***/
+/*Desde mi punto de vista, estas media queries ya no son necesarios porque en Bootstrap ya estan definidos cuatro
+breakpoints que nos ayudan a que la página sea responsive, para este ejercicio solo se usaron dos, la que marca para
+celuar y pantalla de computadora*/
+@media screen and (max-width : 400px) {
+	body {
+		padding-top: 16%;
+	}
+	.hola {
+		font-size: 135% !important;
+	}
+	.introduccion {
+    	font-size: 118% !important;
+    	line-height: 160%;
+	}
+	h2 {
+		font-size: 22px;
+	}
+	#ancho {
+		width: 55%;
+	}
+	#textoPresentacion {
+    	padding: 8% 5%;
+    	line-height: 150%;
+	}
+	h3 {
+		font-size: 16px;
+		text-align: center;
+	}
+	.listaHabilidades {
+		text-align: left;
+	}
+	#dos {
+		text-align: left;
+	}
+	figcaption h3 {
+    	line-height: 5px;
+    	top: 2%;
+    	font-size: 22px;
+	}
+	figcaption p {
+    	padding: 0px 7px;
+    	font-size: 12px;
+	}
+	#textoContacto {
+    	padding: 0% 0%;
+	}
+	h5 {
+    	font-size: 9px;
+	}
+	#derecha {
+		text-align: right;
+	}
+}
+@media screen and (max-width: 720px) {
+	body {
+		padding-top: 12%;
+	}
+	.hola {
+		font-size: 150% !important;
+	}
+	.introduccion {
+    	font-size: 138% !important;
+	}
+	#ancho {
+    	width: 60%;
+	}
+	#textoPresentacion {
+    	padding: 8% 12%;
+	}
+	#derecha {
+		text-align: center;
+	}
+	.listaHabilidades {
+		text-align: left;
+		margin-left: 28%;
+	}
+	#textoContacto {
+    	padding: 0% 14%;
+	}
+}
+@media screen and (max-width: 991px) {
+	.hola {
+    	font-size: 490%;
+	}
+	#ancho {
+    	width: 60%;
+	}
+	#textoPresentacion {
+    	padding: 6% 12%;
+	}
+	#izquierda {
+		text-align: right;
+	}
+	.listaHabilidades {
+		text-align: left;
+		margin-left: 28%;
+	}
+	#textoContacto {
+    	padding: 3% 26%;
+	}
+	.iconosRedesSociales {
+		margin-top: 10%;
+	}
+}
